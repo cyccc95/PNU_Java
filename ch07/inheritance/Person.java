@@ -8,6 +8,10 @@ public class Person {
 		System.out.println("Person 생성자 실행!");
 	}
 	
+	public Person(String name) {
+		this.name = name;
+	}
+	
 	public Person(String name, int age) {
 		this.name = name;
 		this.age = age;
@@ -34,3 +38,4 @@ public class Person {
 }
 
 // super class
+// homework
