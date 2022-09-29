@@ -7,8 +7,8 @@ interface UnitInterface {
 }
 
 class Unit3 {
-	String unit;
-	String location;
+	protected String unit;
+	protected String location;
 	
 	public Unit3() {
 		unit = "";
@@ -109,4 +109,4 @@ public class UnitGame3 {
 
 }
 
-// polymorphism with interface
+// polymorphism with class and interface

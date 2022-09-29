@@ -1,8 +1,8 @@
 package com.ruby.java.ch08.polymorphism;
 
 abstract class Unit2 {
-	String unit;
-	String location;
+	protected String unit;
+	protected String location;
 	
 	public Unit2() {
 		unit = "";
