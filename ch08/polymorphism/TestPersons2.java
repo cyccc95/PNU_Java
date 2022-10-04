@@ -44,17 +44,23 @@ class Employee2 extends Person2 implements Message {
 		this.msg = msg;
 	}
 	
+//	static void messageShowAll(Message[] m) {
+//		for (Message x : m) {
+//			System.out.println(x.getMessage());
+//		}
+//	}
+	
+	
+}
+
+public class TestPersons2 {
+ 
 	static void messageShowAll(Message[] m) {
 		for (Message x : m) {
 			System.out.println(x.getMessage());
 		}
 	}
 	
-	
-}
-
-public class TestPersons2 {
-
 	public static void main(String[] args) {
 		Message[] m = new Message[4];
 		m[0] = new Employee2("p01", "Hong", 18, "Student", "Math", 1000);
@@ -67,7 +73,8 @@ public class TestPersons2 {
 		m[2].setMessage("soso");
 		m[3].setMessage("bad");
 		
-		Employee2.messageShowAll(m);
+//		Employee2.messageShowAll(m);
+		messageShowAll(m);
 	}
 
 }
