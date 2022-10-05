@@ -104,33 +104,33 @@ class WorkStudent extends Student {
 }
 
 public class TestPersons {
-	static void showAll(Person[] setPerson) {
-		for(Person x : setPerson) {
+	static void showAll(Person[] p) {
+		for(Person x : p) {
 			x.show();
 		}
 	}
 	
-	static void increaseAll(Person[] setPerson) {
-		for(Person x : setPerson) {
+	static void increaseAll(Person[] p) {
+		for(Person x : p) {
 			x.increase();
 		}
 	}
 	
-	public static void setData(Person[] setPerson) {
+	public static void setData(Person[] p) {
 		Employee e = new Employee("p01", "Hong", 10, "DB", "Design", 2000);
 		Designer d = new Designer("p02", "Choi", 30, "Designer", "Design", 3000, "Korean", 5);
 		Student s = new Student("p03", "Lee", 23, "PNU", 22, 10);
 		WorkStudent w = new WorkStudent("p04", "Park", 25, "PNU", 20, 30, "Developer", 100);
-		setPerson[0] = e; setPerson[1] = d; setPerson[2] = s; setPerson[3] = w;
+		p[0] = e; p[1] = d; p[2] = s; p[3] = w;
 	}
 	
 	public static void main(String[] args) {
-		Person[] setPerson = new Person[4];
-		setData(setPerson);
-		showAll(setPerson);
+		Person[] p = new Person[4];
+		setData(p);
+		showAll(p);
 		System.out.println("\nincrease salary, scholarship, dayPay");
-		increaseAll(setPerson);
-		showAll(setPerson);
+		increaseAll(p);
+		showAll(p);
 	}
 
 }
